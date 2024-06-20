@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Name="notificationsScreen" x:Class="MyPhoneWinUI.NotificationsScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyPhoneWinUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel>
+        <Button x:Name="clearButton" Content="Clear" FontFamily="Tahoma" FontSize="11" Background="Black" Foreground="White" BorderBrush="White" Click="ClearNotifications" Height="23" RelativePanel.AlignTopWithPanel="True" Padding="0">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#FF000000"/>
+                    <!--<Setter 
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#1DFFFF1D"/>
+                        </Trigger>
+                    </Style.Triggers>-->
+                </Style>
+            </Button.Style>
+        </Button>
+        <ScrollViewer x:Name="notificationsScrollPanel" RelativePanel.Below="clearButton" PointerPressed="">
+            
+        </ScrollViewer>
+    </RelativePanel>
+</UserControl>

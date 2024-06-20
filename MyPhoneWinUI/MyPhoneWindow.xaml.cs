@@ -55,8 +55,12 @@ namespace MyPhoneWinUI {
 			//Debug.WriteLine(AppWindow.Presenter.GetType().FullName);
 		}
 
-		private void myButton_Click(object sender, RoutedEventArgs e) {
-			myButton.Content = "Clicked";
+		private void ChangedTab(object sender, SelectionChangedEventArgs e) {
+
+		}
+
+		private void OnInput(object sender, KeyRoutedEventArgs e) {
+			//if (tabs.SelectedItem )
 		}
 	}
 }
